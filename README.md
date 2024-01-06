@@ -16,3 +16,5 @@ This bootcamp comprises 10 sprints to complete as follows:
 - Python Programming
 - Essential Python for Data Analyst
 - Dashboard
+
+You can find me on LinkedIn
