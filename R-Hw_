@@ -1,0 +1,67 @@
+total_price <- 0
+pizza_topping <- {}
+pizza_size <- {}
+pizza_crust <- {}
+
+order_pizza <- function() {
+  print("Welcome to our pizza shop! What would you like to order?")
+  print("Here is our menu. Pepperoni for 250 baht, Hawaiian for 300 baht, Veggie for 225 baht")
+  while (TRUE) {
+    order = readLines("stdin", n=1)
+    if (order == "Pepperoni") {
+      print("You have ordered a Pepperoni pizza.")
+      pizza_topping <- "Pepperoni"
+      total_price <- total_price + 250
+    } else if (order == "Hawaiian") {
+      print("You have ordered a Hawaiian pizza.")
+      pizza_topping <- "Hawaiian"
+      total_price <- total_price + 300
+    } else if (order == "Veggie") {
+      print("You have ordered a Veggie pizza.")
+      pizza_topping <- "Veggie"
+      total_price <- total_price + 225
+    } else
+      print("Apology, the topping is not available.")
+   readline("Now, please choose your pizza size. There are 3 sizes available: medium + 0 baht, large + 100 baht, and extra large + 100 baht")
+    size = readLines("stdin", n=1)
+    if (size == "medium") {
+    print("Size: medium")
+    pizza_size <- "medium"
+    total_price <- total_price + 0
+  } else if (size == "large") {
+    print("Size: large")
+    pizza_size <- "large"
+    total_price <- total_price + 100
+  } else if (size == "extra large") {
+    print("Size: extra large")
+    pizza_size <- "extra large"
+    total_price <- total_price + 150
+  } else 
+    print("Invalid size choice. Please choose from medium, large, or extra large.")
+   readline("Now, please choose your pizza crust. There are 4 crusts available: pan crust + 0 baht, thin crust + 0 baht, cheese crust + 100 baht, and sausage crust + 100 baht")
+    crust = readLines("stdin", n=1)
+    if (crust == "pan crust") {
+      print("Crust: pan crust")
+      pizza_crust <- "pan crust"
+      total_price <- total_price + 0
+    } else if (crust == "thin crust") {
+      print("Crust: thin crust")
+      pizza_crust <- "thin crust"
+      total_price <- total_price + 0
+    } else if (crust == "cheese crust") {
+      print("Crust: cheese crust")
+      pizza_crust <- "cheese crust"
+      total_price <- total_price + 100
+    } else if (size == "sausage crust") {
+      print("Crust: sausage crust")
+      pizza_crust <- "sausage crust"
+      total_price <- total_price + 100
+    } else 
+        print("Invalid crust choice. Please choose from pan crust, thin crust, cheese crust, or sausage crust.")
+    print(paste("Let's review your order. Your order is a", pizza_topping, "pizza with", pizza_size, "size and", pizza_crust, "crust. The total price is", total_price ,"baht."))
+      print("Enjoy your pizza!")
+     break
+  }
+}
+
+order_pizza()    
