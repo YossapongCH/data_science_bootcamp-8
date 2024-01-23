@@ -1,5 +1,5 @@
-# data_science_bootcamp_08
-My data portfolio for data analyst role
+# My data portfolio for data analyst role
+Hi! Welcome to my Github portfolio. My name is Yossapong Chotcuang. These are various projects that I have done in data science bootcamp from Datarockie by using data analysis skills. Please view and enjoy!
 
 ## What I have learnt from this data science bootcamp.
 
@@ -17,4 +17,4 @@ This bootcamp comprises 10 sprints to complete as follows:
 - Essential Python for Data Analyst
 - Dashboard
 
-You can find me on LinkedIn
+
